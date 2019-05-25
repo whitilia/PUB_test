@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>메가박스</title>
+<link href="css/megabox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/start.js"></script>
+<script type="text/javascript" src="js/content1.js"></script>
+<script type="text/javascript" src="js/content2.js"></script>
+<script type="text/javascript" src="js/content3.js"></script>
+<script type="text/javascript" src="js/content3_event.js"></script>
+<script type="text/javascript" src="js/content4.js"></script>
+<script type="text/javascript" src="js/content5.js"></script>
+<script type="text/javascript" src="js/content6.js"></script>
+    <link href='http://api.mobilis.co.kr/webfonts/css/?fontface=NanumBrushWeb'
+        rel='stylesheet' type='text/css' />
+    <link href='http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb'
+        rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+    	<div id="h_left">
+    		<h1><a href="#"><img src="img/MAGABOX.gif" width="233" height="30" alt="logo1"/></a></h1>
+            <div id="login">
+                <form method="post">
+                <p class="login_le"><a href="#">ID/PW 찾기</a> | <a href="#">회원가입</a></p>
+           	    <p class="login_le login_ri"><input type="checkbox" id="save" name="save" value="아이디저장" checked="checked"/><label for="save">아이디저장</label><p class="login_se"><input type="text" id="id" name="id" size="11" maxlength="10" placeholder="아이디"/><input class="bb" type="password" id="pass" name="pass" size="11" maxlength="10" placeholder="비밀번호"/><a href="#"><img src="img/MainLogin().gif" alt="로그인"/></a></p>
+                </form>
+                <h3><a href="#">로그인 지원센터</a></h3>
+                <h3 class="bar1"><a href="#">비회원 예매확인/취소</a></h3>
+            </div>
+    	</div><!--헤더 왼쪽 끝-->
+        
+        <div id="h_center">
+            <ul>
+                <li><a href="#">예매</a></li>
+                <li class="bar2"><a href="#">영화</a></li>
+                <li class="bar2"><a href="#">영화관</a></li>
+                <li class="bar2"><a href="#">이벤트</a></li>
+                <li class="bar2"><a href="#">할인카드</a></li>
+       	  	</ul>
+            <h2><a href="#"><img src="img/movieDetail1.jpg" width="428" height="90" alt="main_banner1"/></a></h2>
+      	</div><!--헤더 센터 끝-->
+        
+   	  	
+        <div id="h_right">
+       		<ul>
+                <li><a href="#">나의 메가박스</a></li>
+                <li class="bar3"><a href="#">멤버쉽</a></li>
+                <li class="bar3"><a href="#">고객센터</a></li>
+       		</ul>
+			<p  class="blank"><a href=""><img src="img/quickRia(1).gif" width="74" height="75" alt="booking"/></a></p>
+      	  	<p><a href="#"><img src="img/ReserveTheater.gif" width="75" height="75" alt="time_table"/></a></p>
+        </div><!--헤더 오른쪽 끝-->
+  	</div><!--헤더-->
+  
+    <div id="main">
+    	<div id="main_top">
+        	<div id="top_con">
+                <ul>
+                    <li><img src="img/showTab0.gif" width="307" height="50" alt="showtab0"/></li>
+                    <li><img src="img/showTab1.gif" width="307" height="50" alt="showtab1"/></li>
+                    <li><img src="img/showTab2.gif" width="307" height="50" alt="showtab2"/></li>
+                    <li id="openclose1"><img src="img/showMainRia(true).gif" width="16" height="20" alt="showtab4"/></li>
+                    <li id="openclose2"><img src="img/showMainRia(false).gif" width="16" height="20" alt="showtab5"/></li>
+                </ul>
+            </div>
+      	</div><!--메인탑-->
+        <div id="main_middle">
+        	<div id="middle_con">
+            	<div id="m_con1">
+                	<div id="m_con1_left">
+                    	<ul>
+                        	<li title="area0">서울</li>
+                            <li title="area1">인천/경기</li>
+                            <li title="area2">대전/충청</li>
+                            <li title="area3" class="ri">부산/경상</li>
+                            <li title="area4" class="bo">광주/전라</li>
+                            <li title="area5" class="bo">강원</li>
+                            <li title="area6" class="bo">제주</li>
+                            <li title="area7" class="bo ri">&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div id="m_con1_right">
+                    	<ul id="se_area0">
+                        	<li>강남</li>
+                            <li>동대문</li>
+                            <li>목동</li>
+                            <li>상봉</li>
+                            <li>서울대</li>
+                            <li>센트럴</li>
+                            <li>수유</li>
+                            <li>신촌</li>
+                            <li>은평</li>
+                            <li>이수</li>
+                            <li>코엑스</li>
+                        </ul>
+                    	<ul id="se_area1">
+                        	<li>남양주</li>
+                            <li>분당</li>
+                            <li>수원</li>
+                            <li>안산</li>
+                            <li>양주</li>
+                            <li>연수</li>
+                            <li>영통</li>
+                            <li>일산</li>
+                            <li>킨텍스</li>
+                            <li>파주출판도시</li>
+                            <li>평택</li>
+                        </ul>
+                    	<ul id="se_area2">
+                        	<li>공주</li>
+                            <li>대전</li>
+                            <li>제천</li>
+                            <li>조치원</li>
+                            <li>천안</li>
+                            <li>충주</li>
+                        </ul>
+                    	<ul id="se_area3">
+                        	<li>경남대</li>
+                            <li>경주</li>
+                            <li>대구(칠성로)</li>
+                            <li>부산극장</li>
+                            <li>북대구(칠곡)</li>
+                            <li>서면</li>
+                            <li>오투(부산대)</li>
+                            <li>울산</li>
+                            <li>장산</li>
+                            <li>창원</li>
+                            <li>해운대</li>
+                        </ul>
+                    	<ul id="se_area4">
+                        	<li>광주(충장로)</li>
+                            <li>남원</li>
+                            <li>송천</li>
+                            <li>순천</li>
+                            <li>여수</li>
+                            <li>전대(광주)</li>
+                            <li>전주(객사)</li>
+                            <li>첨단(광주)</li>
+                            <li>콜럼버스 상무</li>
+                            <li>콜럼버스 하남</li>
+                        </ul>
+                    	<ul id="se_area5">
+                        	<li>속초</li>
+                            <li>원주</li>
+                        </ul>
+                    	<ul id="se_area6">
+                        	<li>제주</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="m_con2">
+                	<div id="m_con2_center">
+                   	  <img id="con2_le" src="img/grade/preMovie().gif" width="11" height="18" alt="m_con2_bt1"/>
+                    	<div id="m_con2_center_con">
+                        	<div id="m_con2_center_con_vis">
+                                <ul>
+                                    <li><a href="#"> <img src="img/grade/grade15.png" width="16" height="17" alt="grade01"/>007 스카이폴</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade18.png" width="16" height="17" alt="grade02"/>광해, 왕이 된 남자</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade18.png" width="16" height="17" alt="grade03"/>용의자 X</a></li>
+                                </ul>
+                                <ul>
+                                	<li><a href="#"> <img src="img/grade/grade12.png" width="16" height="17" alt="grade04"/>강철대오</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade15.png" width="16" height="17" alt="grade05"/>루퍼</a></li>
+                                    <li><a href="#"> <img src="img/grade/gradea.png" width="16" height="17" alt="grade06"/>인피니트 콘서트</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"> <img src="img/grade/grade15.png" width="16" height="17" alt="grade07"/>회사원</a></li>
+                                    <li><a href="#"> <img src="img/grade/gradea.png" width="16" height="17" alt="grade08"/>메리다와 마법의숲</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade12.png" width="16" height="17" alt="grade09"/>멜로걸작선</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"> <img src="img/grade/grade18.png" width="16" height="17" alt="grade10"/>파라노말 액티비티4</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade15.png" width="16" height="17" alt="grade11"/>로우리스 나쁜영웅들</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade18.png" width="16" height="17" alt="grade12"/>위험한 관계</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"> <img src="img/grade/grade15.png" width="16" height="17" alt="grade13"/>라 트라비아타</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade12.png" width="16" height="17" alt="grade14"/>퍼스트 포지션</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade12.png" width="16" height="17" alt="grade15"/>서칭 포 슈가맨</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"> <img src="img/grade/grade18.png" width="16" height="17" alt="grade16"/>무비 올나잇</a></li>
+                                    <li><a href="#"> <img src="img/grade/grade18.png" width="16" height="17" alt="grade17"/>비정한 도시</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img id="con2_ri" src="img/grade/nextMovie().gif" width="11" height="18" alt="m_con2_bt2"/>
+                    </div>
+                </div>
+                <div id="m_con3">
+                	<div id="m_con3_center">
+                    	<img id="con3_le" src="img/grade/preMovie().gif" width="11" height="18" alt="m_con3_bt1"/>
+                    	<div id="m_con3_center_con">
+                    		<div id="m_con3_center_con_vis">
+                                <p class="m_con3_p">
+                                    2012<br/>
+                                    11
+                                </p>
+                                <p title="date0">
+                                    일<br/>
+                                    25
+                                </p>
+                                <p title="date1">
+                                    월<br/>
+                                    26
+                                </p>
+                                <p title="date2">
+                                    화<br/>
+                                    27
+                                </p>
+                                <p title="date3">
+                                    수<br/>
+                                    28
+                                </p>
+                                <p title="date4">
+                                    목<br/>
+                                    29
+                                </p>
+                                <p title="date5">
+                                    금<br/>
+                                    30
+                                </p>
+                                <p class="m_con3_p">
+                                    2012<br/>
+                                    12
+                                </p>
+                                <p title="date6">
+                                    토<br/>
+                                    01
+                                </p>
+                                <p title="date7">
+                                    일<br/>
+                                    02
+                                </p>
+                                <p title="date8">
+                                    월<br/>
+                                    03
+                                </p>
+                                <p title="date9">
+                                    화<br/>
+                                    04
+                                </p>
+                                <p title="date10">
+                                    수<br/>
+                                    05
+                                </p>
+                                <p title="date11">
+                                    목<br/>
+                                    06
+                                </p>
+                        	</div>
+                        </div>
+                        <img id="con3_ri" src="img/grade/nextMovie().gif" width="11" height="18" alt="m_con3_bt2"/>
+                    </div>
+                </div>
+            </div>
+        </div><!--메인미들-->
+        <div id="main_bottom">
+        	<div id="m_bottom_con">
+            	<img id="m_bottom_img_le" src="img/img_none_02.jpg" width="37" height="50" alt="m_bottom_img1"/>
+                <p><span>영화</span>를 선택해주세요 / <img id="m_bottom_img_cen"src="img/tx_main_06.gif" width="76" height="12" alt="m_bottom_img2"/><span>영화관</span>을 선택해주세요 / <span>날짜</span>를 선택해주세요</p>
+                <div id="m_bottom_con_ri">
+           	    	<img src="img/quickRia().gif" width="50" height="50" alt="quick"/>
+                	<img src="img/reTry().gif" width="50" height="50" alt="retry"/>
+                </div>
+          </div>
+        </div><!--메인버텀-->
+  	</div><!--메인-->
+    <div id="contents">
+    	<div id="con1">
+        	<div id="js_con1">
+            </div><!--컨텐츠1자바-->
+        </div><!--컨텐츠1-->
+   	  <div id="con2">
+        <div id="con2_top">
+            	<div id="con2_top_l">
+                	<div class="con2_clbox">
+                    	<p title="clbox0" id="clbox_bold">예매율순</p>
+                    </div>
+                    <div class="con2_clbox con2_bar">
+                    	<p title="clbox1">관람객순</p>
+                    </div>
+                    <div class="con2_clbox con2_bar">
+                    	<p title="clbox2">가나다순</p>
+                    </div>
+                    <div class="con2_clbox con2_bar">
+                    	<p title="clbox3">상영예정작</p>
+                    </div>
+                </div>
+                <div id="con2_top_r">
+           	    	<img src="img/goMovieMain2().gif" width="67" height="20" alt="con2_allview"/>
+             	</div>
+          </div>
+          <div id="con2_bottom">
+           	  <div id="con2_bottom_l">
+                  <img id="con2_arrow1" src="img/bt_prev_02.gif" width="14" height="22" alt="con2_prev"/>
+                  <div id="con2_bottom_centerbox">
+                  	<div id="con2_bottom_centerbox_img">
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/1.jpg" width="113" height="164" alt="movie1"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/2.jpg" width="113" height="164" alt="movie2"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/3.jpg" width="113" height="164" alt="movie3"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/4.jpg" width="113" height="164" alt="movie4"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/5.jpg" width="113" height="164" alt="movie5"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/6.jpg" width="113" height="164" alt="movie6"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/7.jpg" width="113" height="164" alt="movie7"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/8.jpg" width="113" height="164" alt="movie8"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/9.jpg" width="113" height="164" alt="movie9"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/10.jpg" width="113" height="164" alt="movie10"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/11.jpg" width="113" height="164" alt="movie11"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/12.jpg" width="113" height="164" alt="movie12"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/13.jpg" width="113" height="164" alt="movie13"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/14.jpg" width="113" height="164" alt="movie14"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/15.jpg" width="113" height="164" alt="movie15"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/16.jpg" width="113" height="164" alt="movie16"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/17.jpg" width="113" height="164" alt="movie17"/>
+                        </div>
+                        <div class="con2_imgbox">
+                        	<img class="con2_movie" src="img/img2/18.jpg" width="113" height="164" alt="movie18"/>
+                        </div>
+                    </div>
+                  </div>
+           		  <img id="con2_arrow2" src="img/bt_next_02.gif" width="14" height="22" alt="con2_next"/>
+           	  </div>
+              <div id="con2_bottom_r">
+               	  <img src="img/EventsPartnershipDetail2.jpg" width="175" height="164" alt="문화바우처"/>
+              </div>
+       	  </div>
+    	</div><!--컨텐츠2-->
+        <div id="con3">
+        	<div id="js_con3">
+            </div><!--컨텐츠3자바-->
+            <div id="con3_mov">
+            	<div id="c3m_title">
+           	    	<img src="img/h2_main_01.gif" width="121" height="14" alt="영화이벤트"/>
+                </div>
+                <div id="c3m_img">
+           	    	<img src="img/movieDetail2.jpg" width="120" height="156" alt="movieEvent"/>
+                </div>
+              	<div id="c3m_tx">
+                <h3>[오페라] 라 트라비아타<br/>(La Traviata,2012)</h3>
+                <p>장르 기타<br/>감독 파비오 루이지<br/>배우 나탈리 드세이, 매튜 ...</p>
+                <p><img src="img/movieDetail3.gif" width="32" height="32" alt="무비디테일1"/>&nbsp;<img src="img/movieRia('003733').gif" width="32" height="32" alt="무비디테일2"/></p>
+                </div>
+            </div>
+            <div id="js_con3_event">
+                <div id="js_con3_event_top">
+                </div>
+                <div id="js_con3_event_bottom">
+                	<ul>
+                    	<li><a href="#"><파괴자들> 예매 경품 이벤트</a></li>
+                        <li><a href="#"><브레이킹 던 PART2>와 함께하는 특별 상영...</a></li>
+                        <li><a href="#">메가박스와 함께하는 <카르멘> 기대평 이벤트!</a></li>
+                        <li><a href="#">'제2의 쿠엔틴 타란티노를 찾아라'</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--컨텐츠3-->
+      	<div id="con4">
+        	<div id="js_con4_1">
+            	<div id="top_dv">
+                	<img src="img/h2_main_03.gif" width="51" height="14" alt="공지"/>
+                    <img id="more" src="img/CustomerNoticeList.gif" width="13" height="13" alt="공지더보기"/>
+                  	<div id="cl_box1">
+                    </div>
+                    <img id="con4_bar" src="img/bar3.gif" width="5" height="14" alt="컨텐츠4바"/>
+                  	<div id="cl_box2">
+                    </div>
+              	</div>
+              	<div id="bottom_dv">
+                	<div id="bottom_con1">
+                        <div class="bottom_con">
+                            <ul>
+                                <li><a href="#"><p><span>[전체]</span> 무비올나잇 11월 셋째 주 당첨자 발...</p>2012.11.16</a></li>
+                                <li><a href="#"><p><span>[전체]</span> 먼데이 무비 이벤트 당첨자 발표</p>2012.11.15</a></li>
+                                <li><a href="#"><p><span>[전체]</span> <늑대소년> 무대인사 공지!</p>2012.11.13</a></li>
+                                <li><a href="#"><p><span>[전체]</span> <자탈이 온다> 무대인사 공지!</p>2012.11.12</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="bottom_con2">
+                        <div class="bottom_con">
+                            <ul>
+                                <li><a href="#"><p><span>[신촌]</span> <시사회 공지> 음치클리닉</p>2012.11.19</a></li>
+                                <li><a href="#"><p><span>[서면]</span> <시사회 공지> 내 인생의 마지막 변화...</p>2012.11.19</a></li>
+                                <li><a href="#"><p><span>[목동]</span> 11월 20일(화) 조조영화 예매 관...</p>2012.11.19</a></li>
+                                <li><a href="#"><p><span>[목동]</span> <시사회 공지> 음치클리닉</p>2012.11.19</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--컨텐츠4자바-->
+            <div id="con4_2">
+            	<div id="con4_2_top">
+           	    	<img src="img/h2_main_04.gif" width="105" height="14" alt="메가박스할인카드"/>
+                	<a href="#"><img id="top_r" src="img/CustomerNoticeList.gif" width="13" height="13" alt="플러스"/></a>
+                </div>
+                <div id="con4_2_bottom">
+                	<div class="card_img">
+                    	<img src="img/card/img_main_01.jpg" width="66" height="51" alt="t멤버십"/>
+                        <ul>
+                        	<li><a href="#"><p class="bold">T멤버십</p><p>영화 2,000원 할인(1일 1회)</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="card_img">
+                    	<img src="img/card/img_main_02.jpg" width="66" height="51" alt="올레"/>
+                        <ul>
+                        	<li><a href="#"><p class="bold">olleh club</p><p>영화 1,000원 현장 할인(1일 1회)</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="card_img">
+                    	<img src="img/card/img_main_03.jpg" width="66" height="51" alt="유플러스"/>
+                        <ul>
+                        	<li><a href="#"><p class="bold">LG U+</p><p>영화 1,000원 현장 할인</p><p>(1일 1회/월 4회)</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+          	</div>
+            <div id="con4_3">
+       	  		<a href="#"><img src="img/EventsMegaDetail5.jpg" width="300" height="200" alt="EventsMegaDetail5"/></a>
+         	</div>
+        </div><!--컨텐츠4-->   
+        <div id="con5">
+        	<div id="l_con5">
+            	<div id="l_top">
+           	    	<img src="img/h2_main_05.gif" width="83" height="14" alt="추천"/>
+                  	<div id="l_top_cl0">
+                    </div>
+                    <img class="con5_bar" src="img/bar3.gif" width="5" height="14" alt="컨텐츠5바1"/>
+                    <div id="l_top_cl1">
+                    </div>
+                    <img class="con5_bar" src="img/bar3.gif" width="5" height="14" alt="컨텐츠5바2"/>
+                    <div id="l_top_cl2">
+                    </div>
+                    <img class="con5_bar" src="img/bar3.gif" width="5" height="14" alt="컨텐츠5바3"/>
+                    <div id="l_top_cl3">
+                    </div>
+                </div>
+                <div id="l_bottom">
+                	<div id="l_bottom_img">
+                        <img src="img/theater/TheaterDetail1.jpg" width="470" height="150" alt="메가박스매장0"/>
+                    </div>
+                </div>
+            </div>
+            <div id="r_con5">
+            	<div id="r_top">
+           	    	<img class="left" src="img/h2_main_06.gif" width="124" height="13" alt="메가박스로비"/>
+                	<a href="#"><img class="right" src="img/megabox_dreamct.gif" width="29" height="29" alt="트위터"/></a>
+                    <a href="#"><img class="right" src="img/megaboxon.gif" width="29" height="29" alt="페이스북"/></a>
+                </div>
+                <div id="r_bottom">
+                	<div class="con5_bo">
+                    	<img class="left" src="img/tx_main_03.gif" width="265" height="31" alt="tx1"/>
+                        <a href="#"><img class="right" src="img/goMyCoupon1().gif" width="50" height="19" alt="상세보기"/></a>
+                    </div>
+                    <div class="con5_bo">
+                    	<img class="left" src="img/tx_main_04.gif" width="256" height="31" alt="tx2"/>
+                        <a href="#"><img class="right" src="img/goMyCoupon1().gif" width="50" height="19" alt="상세보기"/></a>
+                    </div>
+                    <div id="con5_bo1">
+                    	<img class="left" src="img/tx_main_05.gif" width="260" height="31" alt="tx3"/>
+                        <a href="#"><img class="right" src="img/goMyCoupon1().gif" width="50" height="19" alt="상세보기"/></a>
+                        <a href="#"><img class="right" src="img/goMymega().gif" width="69" height="19" alt="vip"/></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--컨텐츠5-->
+    </div><!--컨텐츠-->
+    
+    <div id="footer">
+    	<div id="footer_bn">
+        <p><img src="img/EventsPartnershipDetail5.jpg" width="980" height="100" alt="footer_banner" /></p>
+        </div><!--풋터 배너 끝-->
+        <div id="footer_copy">
+            <p><img src="img/footer_logo.jpg" width="100" height="100" alt="footer_logo" /></p>
+            <div id="copy_ul">
+                <ul id="ft_ul1">
+                    <li>회사소개&nbsp;|&nbsp;</li>
+                    <li>채용정보&nbsp;|&nbsp;</li>
+                    <li>제휴/광고/부대사업 문의&nbsp;|&nbsp;</li>
+                    <li>이용약관&nbsp;|&nbsp;</li>
+                    <li class="purple">개인정보취급방침</li>
+                    <li>&nbsp;|&nbsp;사이트맵&nbsp;|&nbsp;</li>
+                    <li>고객센터&nbsp;|&nbsp;</li>
+                    <li>메가박스 드림센터&nbsp;</li>
+                    <li class="purple">ARS 1544-0070</li>
+                </ul>
+                <ul id="ft_ul2">
+                    <li>경기도 성남시 분당구 야탑동 486 탄천종합운동장 주경기장 내&nbsp;|&nbsp;</li>
+                    <li>대표자명 여환주&nbsp;|&nbsp;</li>
+                    <li>개인정보관리책임자 조형기</li>
+                </ul>
+                <ul id="ft_ul3">
+                    <li>사업자등록번호 211-86-59478&nbsp;|&nbsp;</li>
+                    <li>통신판매업신고번호 제883호</li>
+                </ul>
+                <address>Copyright 2012 by MEGABOX. All rights reserved</address>
+            </div>
+        </div><!--풋터 카피 끝-->
+    </div><!--풋터_스타일시트 변경 필요-->
+</div><!--컨테이너-->
+</body>
+</html>
